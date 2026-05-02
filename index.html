@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribuart — Productos de Tagua</title>
+    <meta name="description"
+        content="TRIBUART — Joyería artesanal elaborada con tagua, el marfil vegetal. Próximamente una nueva experiencia digital." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== TOP NAV ===== -->
+    <header id="site-header">
+        <div class="header-inner">
+            <nav class="header-nav">
+                <button id="lang-toggle" class="lang-btn" aria-label="Cambiar idioma">
+                    <span class="lang-label">ES</span>
+                    <span class="lang-divider">/</span>
+                    <span class="lang-label lang-inactive">EN</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content">
+        <div class="hero-grid">
+            <!-- Text Side -->
+            <div class="hero-text">
+                <img src="assets/logo.png" alt="Tribuart Logo" class="hero-logo" data-animate="fade-up"
+                    data-delay="0" />
+
+                <div class="hero-tag" data-animate="fade-up" data-delay="1">
+                    <span class="tag-line"></span>
+                    <span class="tag-label" data-i18n="tag">Próximamente</span>
+                </div>
+
+                <h1 class="hero-title" data-animate="fade-up" data-delay="2">
+                    <span data-i18n="title-1">Sitio en</span><br />
+                    <span data-i18n="title-2">Construcción</span>
+                </h1>
+
+                <p class="hero-desc" data-animate="fade-up" data-delay="3" data-i18n="desc">
+                    Estamos creando una nueva experiencia digital para celebrar la belleza natural de la tagua. Nuestro
+                    taller virtual abrirá pronto.
+                </p>
+
+                <!-- Email Signup -->
+                <div class="signup-block" data-animate="fade-up" data-delay="4">
+                    <form id="notify-form" class="signup-form" novalidate>
+                        <div class="input-wrap">
+                            <input type="email" id="email-input" class="signup-input" placeholder=" " required
+                                autocomplete="email" />
+                            <label for="email-input" class="signup-label" data-i18n="email-label">Tu correo
+                                electrónico</label>
+                        </div>
+                        <button type="submit" class="cta-btn" id="notify-btn">
+                            <span data-i18n="cta">Notificarme</span>
+                            <span class="material-symbols-outlined btn-icon">arrow_right_alt</span>
+                        </button>
+                    </form>
+                    <p class="signup-success hidden" id="signup-success" data-i18n="success">
+                        ¡Gracias! Te notificaremos cuando estemos listos.
+                    </p>
+                </div>
+
+                <!-- Social links -->
+                <div class="social-row" data-animate="fade-up" data-delay="5">
+                    <a href="https://instagram.com/tribuart" target="_blank" rel="noopener" class="social-link"
+                        aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <circle cx="12" cy="12" r="5" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                        </svg>
+                    </a>
+                    <a href="mailto:hello@tribuart.com" class="social-link" aria-label="Email">
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image Side -->
+            <div class="hero-image-wrap" data-animate="fade-scale" data-delay="2">
+                <div class="image-frame">
+                    <div class="image-border-inner"></div>
+                    <img src="assets/hero.png" alt="Artesano tallando joyería en tagua" class="hero-image"
+                        loading="eager" />
+                </div>
+                <!-- Floating accent -->
+                <div class="float-accent float-accent-1"></div>
+                <div class="float-accent float-accent-2"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="site-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <img src="assets/logo.png" alt="Tribuart" class="footer-logo" />
+                <p class="footer-copy">© 2026 Tribuart. Productos de Tagua.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#" class="footer-link" data-i18n="footer-sustainability">Sostenibilidad</a>
+                <a href="#" class="footer-link" data-i18n="footer-process">Proceso</a>
+                <a href="#" class="footer-link" data-i18n="footer-contact">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
