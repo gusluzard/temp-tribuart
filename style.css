@@ -607,7 +607,6 @@ button {
 
   .hero-text {
     padding-right: 0;
-    order: 2;
     text-align: center;
     align-items: center;
   }
@@ -621,7 +620,6 @@ button {
   }
 
   .hero-image-wrap {
-    order: 1;
     max-width: 480px;
     margin: 0 auto;
   }
