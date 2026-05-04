@@ -125,17 +125,24 @@
         return;
       }
 
-      // Simulate submission
+      // Open mail client
+      const subject = currentLang === 'es' ? 'Notificarme - Tribuart' : 'Notify Me - Tribuart';
+      const body = currentLang === 'es' 
+        ? `Hola,\n\nPor favor notifíquenme cuando el sitio de Tribuart esté listo.\n\nMi correo: ${email}`
+        : `Hello,\n\nPlease notify me when the Tribuart site is ready.\n\nMy email: ${email}`;
+      
+      const mailtoUrl = `mailto:info@tribuart.ec?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
+
+      // Show success message locally
       const btn = document.getElementById('notify-btn');
       btn.disabled = true;
       btn.style.opacity = '.6';
-      btn.querySelector('[data-i18n="cta"]').textContent =
-        currentLang === 'es' ? 'Enviando…' : 'Sending…';
-
+      
       setTimeout(() => {
         form.classList.add('hidden');
         successEl.classList.remove('hidden');
-      }, 1200);
+      }, 800);
     });
   }
 
